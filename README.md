@@ -1,5 +1,7 @@
 ## Sunderland-ZIP is a protocol for decentralized digital identity management
 
+![logo](./img/logo.jpg)
+
 It allows individuals to generate, store, and verify claims about themselves—such as age, citizenship, and academic achievements—without relying on centralized registries or third parties.
 
 Verification is implemented through zero-knowledge proofs (ZKPs): the verifying party can verify the correctness of the claim without accessing the source data or requiring the disclosure of personal information. Proof schemes are tied to cryptographically derived identifiers (e.g., DID) controlled by the owner.
@@ -75,4 +77,5 @@ $ .\szip-cli.exe verify --file .\age_proof_19.json
 ## Demo
 
 ![Demo0](./img/showcase0.jpg)
+
 ![Demo1](./img/showcase1.jpg)
