@@ -1,0 +1,28 @@
+[workspace]
+resolver = "3"
+members = [
+    "szip-browser", 
+    "szip-cli", 
+    "szip-core", 
+    "szip-crypto", 
+    "szip-network", 
+    "szip-storage", 
+    "szip-verifiable",
+    "examples/szip-migrant-zk/szip-migrant-cli",
+    "examples/szip-migrant-zk/szip-migrant-core",
+    "examples/szip-migrant-zk/szip-migrant-crypto",
+#   "examples/szip-rescomply-zk/szip-rescomply-core", 
+#   "examples/szip-rescomply-zk/szip-rescomply-crypto", 
+#   "examples/szip-rescomply-zk/szip-rescomply-cli"
+]
+
+[profile.release]
+opt-level = 3
+lto = true
+codegen-units = 1
+
+[workspace.dependencies]
+anyhow = "1.0"
+chrono = { version = "0.4", features = ["serde"] }
+serde = { version = "1.0", features = ["derive"] }
+clap = { version = "4.0", features = ["derive"] }
